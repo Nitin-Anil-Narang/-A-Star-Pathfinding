@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>A* Algorithm</title>
-		<script src="scripts/modernizr-1.7.min.js" type="text/javascript" charset="utf-8"></script>
-		<script data-main="scripts/bootstrapper" src="scripts/require-jquery.js"></script>
-		<link rel="stylesheet" href="astar.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	</head>
-	<body>
-		<div>
-			<h1>A* Algorithm</h1>
-			<p>This is a HTML 5 Canvas and JavaScript implementation of the A* path finding algorithm. It makes use of the JavaScript libraries <a href="http://jquery.com/">jQuery</a> and <a href="http://requirejs.org/">RequireJS</a>.</p>
-			<p>Source code can be found <a href="">online at GitHub</a>.</p>
-			<p>You can select a predetermined board layout below and click in an empty square to move the player piece.</p>
-			<div id="browserNotSupported"><p>Your browser does not support running A*. Please upgrade to a more recent version that supports HTML 5 canvas.</div>
-			<div id="astar">
-				<div id="toolbar">
-					<span class="right">Time taken to calculate path: <span id="timeTaken">N/A</span></span>
-					<span>
-						<select id="boardType">
-							<option value="empty">Empty</option>
-							<option value="cubes">Cubes</option>
-							<option value="verticalPillars">Vertical Pillars</option>
-						</select>
-						<input id="resetButton" type="button" value="Reset" / >
-					</span>
-				</div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>A* Algorithm</title>
+    <script
+      src="scripts/modernizr-1.7.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      data-main="scripts/bootstrapper"
+      src="scripts/require-jquery.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="astar.css"
+      type="text/css"
+      media="screen"
+      title="no title"
+      charset="utf-8"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>A* Algorithm</h1>
+      <p>
+        This is a HTML 5 Canvas and JavaScript implementation of the A* path
+        finding algorithm. It makes use of the JavaScript libraries
+        <a href="http://jquery.com/">jQuery</a> and
+        <a href="http://requirejs.org/">RequireJS</a>.
+      </p>
+      <p>Source code can be found <a href="">online at GitHub</a>.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+        modi.
+      </p>
+      <div id="browserNotSupported">
+        <p>
+          Your browser does not support running A*. Please upgrade to a more
+          recent version that supports HTML 5 canvas.
+        </p>
+      </div>
+      <div id="astar">
+        <div id="toolbar">
+          <span class="right"
+            >Time taken to calculate path: <span id="timeTaken">N/A</span></span
+          >
+          <span>
+            <select id="boardType">
+              <option value="empty">Empty</option>
+              <option value="cubes">Cubes</option>
+              <option value="verticalPillars">Vertical Pillars</option>
+            </select>
+            <input id="resetButton" type="button" value="Reset" / >
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
