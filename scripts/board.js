@@ -18,7 +18,7 @@ define(["metrics"], function(metrics) {
 
 			fromTop = true;
 
-			for (columnIndex = 1; columnIndex < board.width; columnIndex += 2) {
+			for (columnIndex = 1; columnIndex < board.width; columnIndex += 7) {
 				for (rowIndex = 0; rowIndex < (board.height/3*2).integer(); rowIndex++) {
 					calculatedRowIndex = fromTop ? rowIndex : board.height-1-rowIndex;
 					board.setMovementCost(columnIndex, calculatedRowIndex, board.movementCosts.impassable);
@@ -38,7 +38,7 @@ define(["metrics"], function(metrics) {
 			var rowIndex;
 			var columnIndex;
 			
-			for (rowIndex = 0; rowIndex < metrics.boardHeight; rowIndex++) {
+			for (rowIndex = 0; rowIndex < metrics.boardHeight; rowIndex++) 
 				row = [];
 				for (columnIndex = 0; columnIndex < metrics.boardWidth; columnIndex++) {
 					row.push(0);
