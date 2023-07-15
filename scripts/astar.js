@@ -16,7 +16,7 @@ define(["jquery", "board", "renderer", "pathFinder"], function($,boardFactory,re
 			
 			canvas.click(function(e) {
 				var canvasPos = canvas.position();
-				var x = e.pageX - canvasPos.left;
+				var x = e.pageX - canvasPos.right;
 				var y = e.pageY - canvasPos.top;
 				var boardPosition = renderer.getBoardCoordinates(that.board, x, y);
 				var startTime = new Date().getTime();
